@@ -1,0 +1,164 @@
+@font-face {
+  @include font-family-build(
+    $font-jetbrains-regular-path,
+    $font-jetbrains-regular-name
+  );
+}
+
+@font-face {
+  @include font-family-build(
+    $font-jetbrains-bold-path,
+    $font-jetbrains-bold-name
+  );
+}
+
+@font-face {
+  @include font-family-build(
+    $font-jetbrains-italic-path,
+    $font-jetbrains-italic-name
+  );
+}
+
+@font-face {
+  @include font-family-build(
+    $font-jetbrains-light-italic-path,
+    $font-jetbrains-light-italic-name
+  );
+}
+
+@font-face {
+  @include font-family-build(
+    $font-jetbrains-medium-italic-path,
+    $font-jetbrains-medium-italic-name
+  );
+}
+
+@font-face {
+  @include font-family-build(
+    $font-jetbrains-medium-path,
+    $font-jetbrains-medium-name
+  );
+}
+
+@font-face {
+  @include font-family-build(
+    $font-jetbrains-semi-light-path,
+    $font-jetbrains-semi-light-name
+  );
+}
+
+@font-face {
+  @include font-family-build(
+    $font-jetbrains-light-path,
+    $font-jetbrains-light-name
+  );
+}
+
+@font-face {
+  @include font-family-build(
+    $font-jetbrains-semi-light-italic-path,
+    $font-jetbrains-semi-light-italic-name
+  );
+}
+
+@font-face {
+  @include font-family-build(
+    $font-jetbrains-xtra-bold-italic-path,
+    $font-jetbrains-xtra-bold-italic-name
+  );
+}
+
+@font-face {
+  @include font-family-build(
+    $font-jetbrains-xtra-bold-path,
+    $font-jetbrains-xtra-bold-name
+  );
+}
+
+@font-face {
+  @include font-family-build(
+    $font-jetbrains-xtra-light-italic-path,
+    $font-jetbrains-xtra-light-italic-name
+  );
+}
+
+@font-face {
+  @include font-family-build(
+    $font-jetbrains-xtra-light-path,
+    $font-jetbrains-xtra-light-name
+  );
+}
+
+@font-face {
+  @include font-family-build(
+    $font-jetbrains-bold-italic-path,
+    $font-jetbrains-bold-italic-name
+  );
+}
+
+.font {
+  &--jetbrains {
+    &-xtra-light {
+      font-family: $font-jetbrains-xtra-light-name;
+    }
+
+    &-xtra-light-italic {
+      font-family: $font-jetbrains-xtra-light-italic-name;
+    }
+
+    &-light {
+      font-family: $font-jetbrains-light-name;
+    }
+
+    &-light-italic {
+      font-family: $font-jetbrains-light-italic-name;
+    }
+
+    &-semi-light {
+      font-family: $font-jetbrains-semi-light-name;
+    }
+
+    &-semi-light-italic {
+      font-family: $font-jetbrains-semi-light-italic-name;
+    }
+
+    &-regular {
+      font-family: $font-jetbrains-regular-name;
+    }
+
+    &-regular-italic {
+      font-family: $font-jetbrains-italic-name;
+    }
+
+    &-medium {
+      font-family: $font-jetbrains-medium-name;
+    }
+
+    &-medium-italic {
+      font-family: $font-jetbrains-medium-italic-name;
+    }
+
+    &-bold {
+      font-family: $font-jetbrains-bold-name;
+    }
+
+    &-bold-italic {
+      font-family: $font-jetbrains-bold-italic-name;
+    }
+
+    &-xtra-bold {
+      font-family: $font-jetbrains-xtra-bold-name;
+    }
+
+    &-xtra-bold-italic {
+      font-family: $font-jetbrains-xtra-bold-italic-name;
+    }
+  }
+}
+
+.typography {
+    &--regular {
+        font-size: 1.8rem;
+        margin-top: 1.2rem;
+    }
+}

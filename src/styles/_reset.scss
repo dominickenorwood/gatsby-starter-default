@@ -1,0 +1,62 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  /*paddings and borders not added to width and height, 
+  force inheritance from body this is a better practice 
+  because you can change the value anytime*/
+  box-sizing: inherit;
+}
+
+html {
+  /*rem does not work in IE9 or below*/
+  /* 1rem = 10px; 10px/16px = 62.5 
+  Converts  default font size from 16px to 10px, 
+  User percentage for users who want to increase 
+  the font size of their browser*/
+  font-size: 62.5%;
+}
+
+body {
+  @include font-size(16);
+  /*font styles handled in body because they are 
+  inherited by all elements in body*/
+  font-family: $font-jetbrains-regular-name;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-family: $font-jetbrains-xtra-bold-name;
+}
+
+h1 {
+  @include font-size(38);
+  margin-top: 4rem;
+}
+
+h2 {
+  @include font-size(24);
+  margin-top: 3.2rem;
+}
+
+h3 {
+  @include font-size(18);
+  margin-top: 2.4rem;
+}
+
+h4,
+h5,
+h6 {
+  @include font-size(16);
+  margin-top: 1.8rem;
+}

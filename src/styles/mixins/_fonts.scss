@@ -1,0 +1,22 @@
+@mixin font-size($sizeValue: 16) {
+  font-size: ($sizeValue) + px;
+  font-size: ($sizeValue * 0.1) + rem;
+}
+
+@mixin font-family-build(
+  $path: '/font',
+  $family: 'Arial',
+  $weight: 'normal',
+  $style: 'normal'
+) {
+  font-family: $family;
+  src: url($path + '.eot');
+  src: url($path + '.eot?#iefix')
+      format('embedded-opentype'),
+    url($path + '.woff')
+      format('woff'),
+    url($path + '.woff2')
+      format('woff2');
+  font-weight: $weight;
+  font-style: $style;
+}

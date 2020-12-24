@@ -1,0 +1,33 @@
+.H01-Header {
+    position: relative;
+    z-index: 2;
+
+    background-color: #EEE;
+    box-shadow: 0 0 30px -10px #000;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        padding: 2.4rem percentage(2 / 24);
+    }
+
+    &__navigation {
+        display: flex;
+        flex-direction: row;
+        margin-left: 3.2rem;
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: #000;
+
+        &:not(:last-child) {
+            margin-right: 3.2rem;
+        }
+
+        &:hover {
+            color: #AAA;
+        }
+    }
+}

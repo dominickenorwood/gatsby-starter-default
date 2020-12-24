@@ -1,0 +1,44 @@
+.section {
+    margin: 5rem 0;
+    
+    &__wrapper {
+        padding: 0 percentage(2 / 24);
+    }
+}
+
+.background {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    
+    background-size: cover;
+    background-position: 50% 50%;
+
+    &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        content: '';
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+    }
+
+    &::after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        height: 100px;
+
+        content: '';
+        background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+        z-index: 2;
+    }
+}
